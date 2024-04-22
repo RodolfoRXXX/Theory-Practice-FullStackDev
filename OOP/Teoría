@@ -1,0 +1,12 @@
+Paradigma de Objetos
+
+- Qué es un paradigma?
+  Un paradigma es un acuerdo entre partes de cómo van a ser los bloques de construcción de un programa. Es un marco de trabajo.
+  En nuestro caso, utilizamos el paradigma de objetos.
+
+- Qué es el paradigma de objetos?
+  Este paradigma determina que los bloques de construcción del programa van a estar definidos por objetos, estas son entidades encapsuladas que tienen atributos y métodos.
+  Este concepto define que todo el programa estárá únicamente compuesto por objetos que envían y reciben mensajes entre ellos.
+  Para poder utilizar este paradigma, es necesario implementarlo, es decir, escribirlo en un lenguaje de programación siguiendo el concepto de objeto.
+
+
