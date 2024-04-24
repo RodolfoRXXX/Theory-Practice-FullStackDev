@@ -5,8 +5,11 @@ Paradigma de Objetos
   En nuestro caso, utilizamos el paradigma de objetos.
 
 - Qué es el paradigma de objetos?
-  Este paradigma determina que los bloques de construcción del programa van a estar definidos por objetos, estas son entidades encapsuladas que tienen atributos y métodos.
-  Este concepto define que todo el programa estárá únicamente compuesto por objetos que envían y reciben mensajes entre ellos.
-  Para poder utilizar este paradigma, es necesario implementarlo, es decir, escribirlo en un lenguaje de programación siguiendo el concepto de objeto.
+  Este paradigma de programación, también llamado POO (Programación Orientada a Objetos) se basa en el concepto de que código y datos están encapsulados en una sola entidad llamada "clase".
+  Estas clases están conformadas por datos(atributos) y funciones(métodos) que determinan su funcionamiento.
+  Para utilizar estas pequeñas fracciones de código es necesario instanciar estas clases y generar objetos.
+
+
+  
 
 
