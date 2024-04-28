@@ -18,5 +18,12 @@ Paradigma de Objetos
   > UML. Es un lenguaje de modelado de clases y objetos. Este lenguaje permite definir comportamientos, límites y propiedades de cada entidad que se utilice para el programa y su interacción entre ellas;
 
 
+Si la POO se maneja en términos de clases y objetos, entonces
+Qué es una clase?
+  Una clase es una abstracción de una porción de un problema a resolver que tiene atributos y métodos para resolverlo. Esta entidad se utiliza como plano para generar objetos.
+
+Qué es un objeto?
+  Es el resultado de implementar una clase. Los objetos se crean para resolver una parte de un problema utilizando sus métodos y atributos y compartiendo con otros objetos estos resultados en forma de mensajes.
+
 
 
