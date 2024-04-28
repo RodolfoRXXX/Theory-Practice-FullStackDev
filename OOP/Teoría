@@ -9,7 +9,14 @@ Paradigma de Objetos
   Estas clases están conformadas por datos(atributos) y funciones(métodos) que determinan su funcionamiento.
   Para utilizar estas pequeñas fracciones de código es necesario instanciar estas clases y generar objetos.
 
+- Características de la POO
+  > Abstracción. La modularización de la POO se lleva a cabo gracias a unir propiedades y comportamientos en entidades que permitan modelar el programa, la abstracción posibilita eso;
+  > Encapsulamiento. Reunir entidades en el mismo nivel de abstracción;
+  > Ppio. de Ocultación. Permite ocultar los datos y cómo funciona una entidad por dentro, solo permitiendo que el exterior vea lo que el programador desea y así también cómo entregar los datos;
+  > Polimorfismo. Es la posibilidad de redefinir propiedades o métodos de otros objetos sin que sea necesario volverlos a crear con otro nombre, solo dependiendo del objeto desde el que se los implemente;
+  > Herencia. Es la capacidad de extender las funcionalidades de un objeto para hacerlo menos general y más específico al problema que se quiera resolver;
+  > UML. Es un lenguaje de modelado de clases y objetos. Este lenguaje permite definir comportamientos, límites y propiedades de cada entidad que se utilice para el programa y su interacción entre ellas;
 
-  
+
 
 
