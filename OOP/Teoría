@@ -25,5 +25,53 @@ Qué es una clase?
 Qué es un objeto?
   Es el resultado de implementar una clase. Los objetos se crean para resolver una parte de un problema utilizando sus métodos y atributos y compartiendo con otros objetos estos resultados en forma de mensajes.
 
+Cómo se define una clase?
+  Una clase se define con la palabra reservada "class" seguida del nombre de la clase en mayúscula y de un conjunto de corchetes que encapsulan a los elementos de la clase.
+  En PHP una clase se define así:
+
+      class Persona {
+  
+        # Atributos
+          $nombre;
+          $apellido;
+          $edad;
+  
+        # Constructor
+          public function __construct($nombre=NULL, $apellido=NULL, $edad=NULL){
+              if ($nombre != NULL) $this->setNombre($nombre);
+              if ($apellido != NULL) $this->setApellido($apellido);
+              if ($edad != NULL) $this->setEdad($edad);
+          }
+  
+        # Métodos
+          public function setNombre($nombre){
+              $this->$nombre = $nombre;
+          }
+          public function setApellido($apellido){
+              $this->$apellido = $apellido;
+          }
+          public function setEdad($edad){
+              $this->$edad = $edad;
+          }
+  
+      }
+
+  En esta clase podemos ver la definición de atributos y de métodos, como así también la definición de un constructor que al utilizar la sentencia "new" al llamar a la clase, este instancia a la clase en un nuevo objeto.
+  Este constructor se utiliza, además de para crear al objeto, también para definir sus atributos.
+
+A qué hace referencia la Herencia de clases?
+  La Herencia de clases sirve para hacer el código más conciso y no repetitivo. Cuando una clase extiende de otra, la clase "Hija" toma los atributos y métodos de la clase "Padre" sin necesidad de definirlos y
+  puede hacer uso de ellos o modificar su funcionamiento.
+  También se utiliza como un árbol conceptual de niveles de abstracción, donde las clases que heredan de otras, se vuelven más particulares al modelo.
+
+Cómo redefinimos métodos?
+  Cuando se usa la herencia de clases, la clase que hereda puede redefinir los métodos que desee, con el fin de agregarles funcionalidad o simplemente cambiarla. Así el funcionamiento de éste método queda 
+  determinado por el objeto desde el que se llama, siendo diferente para el padre como para el hijo.
+
+Para qué sirve el operador parent::?
+  En la herencia de clases, el operador "parent::" se utiliza para llamar a algún método o atributo de la clase padre.
+
+Qué son las clases abstractas?
+  Las clases abstractas son clases que no pueden ser instanciadas. Generalmente estas clases son extendidas por otras más particulares que redefinen sus métodos y pueden ser instanciadas.
 
 
