@@ -56,7 +56,8 @@ Cómo se define una clase?
   
       }
 
-  En esta clase podemos ver la definición de atributos y de métodos, como así también la definición de un constructor que al utilizar la sentencia "new" al llamar a la clase, este instancia a la clase en un nuevo objeto.
+  En esta clase podemos ver la definición de atributos y de métodos, como así también la definición de un constructor que es llamado cuando se utiliza la palabra "new" en el código, esto genera la 
+  instanciación de la clase en un nuevo objeto.
   Este constructor se utiliza, además de para crear al objeto, también para definir sus atributos.
 
 A qué hace referencia la Herencia de clases?
@@ -74,4 +75,42 @@ Para qué sirve el operador parent::?
 Qué son las clases abstractas?
   Las clases abstractas son clases que no pueden ser instanciadas. Generalmente estas clases son extendidas por otras más particulares que redefinen sus métodos y pueden ser instanciadas.
 
+Qué son los namespaces?
+  Los namespaces son tipos de sintáxis que se utilizan en las clases para distinguírlas de otras que se llamen igual.
+  Al encapsular a una clase en una cláusula de tipo namespace, lo que hacemos es separarla de otras similares.
+
+  Ej.
+      namespace ecommerce{
+        class Persona{
+        
+        }
+      }
+
+  De forma que al utilizar esta clase debemos invocarla de la siguiente manera:
+
+  require class/Persona.class.php;
+  require vendor/class/Persona.class.php;
+
+  use \ecommerce\Persona as PersonaEcommerce;
+
+  # Forma 1 sin use
+    $personaEcommerce = \ecommerce\Persona();
+
+  # Forma 2 con use
+  $personaEcommerce = new PersonaEcommerce();
+
+Cómo capturar excepciones?
+  Para evitar errores que puedan detener nuestro código debemos atrapar las excepciones y para ello utilizamos el bloque try/catch.
+  Ej.
+      try{
+
+          //código a ejecutar
+
+      } catch(Exception $e){
+
+          echo "Se ha detectado el siguiente error: {$e->getMessage()}";
+
+      }
+
+  En este caso, si alguna excepción es generada en el bloque "try", el bloque "catch" la atrapará y entregará el error, pero la aplicación no se detendrá de forma abrupta.
 
