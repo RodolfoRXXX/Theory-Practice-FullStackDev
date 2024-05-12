@@ -114,3 +114,14 @@ Cómo capturar excepciones?
 
   En este caso, si alguna excepción es generada en el bloque "try", el bloque "catch" la atrapará y entregará el error, pero la aplicación no se detendrá de forma abrupta.
 
+Qué son los modificadores de visibilidad?
+  Estos son palabras dedicadas al lenguaje que permiten definir el nivel de acceso de atributos o métodos de una clase.
+  Existen tres tipos: public, private y protected.
+
+  Si el atributo o método tiene el siguiente modificador de visibilidad tiene las siguientes restricciones:
+    public: sin restricciones, es accesible tanto desde afuera de la clase como desde adentro y desde las clases que extiendan de ella.
+    private: solo accesibles desde la clase donde se definió, no desde la clase que la hereda.
+    protected: es como private pero es accesible desde la clase que la hereda.
+
+  Como regla general, los atributos deben ser privados y los métodos públicos. Debería evitarse el modificador protected y acceder a los atributos a través de setters y getters.
+
